@@ -1,6 +1,6 @@
 module github.com/permhoot/rebuild
 
-go 1.21
+go 1.22
 
 require (
 	github.com/shipwright-io/build v0.12.1-0.20240320125241-2a4b6ed197dd
