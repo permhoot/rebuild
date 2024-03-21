@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/shipwright-io/build v0.12.1-0.20240320125241-2a4b6ed197dd
-	k8s.io/api v0.28.5
+	k8s.io/api v0.29.3
 	k8s.io/apimachinery v0.29.3
 	k8s.io/client-go v0.28.5
 	knative.dev/serving v0.40.1
