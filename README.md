@@ -23,6 +23,6 @@ Create a Knatitve service that is using the same image reference as the one that
 
 That's it in the cluster.
 
-Next, you need to configure the URL of the tool in the GitHub repository _Settings_ under _Webhook_s: Click _Add Webhook_ and put the tool URL as the _Payload URL_. Select _Branch or tag creation_ for example if this is only for new tags or releases. Save it by clicking _Add Webhook_.
+Next, you need to configure the URL of the tool in the GitHub repository _Settings_ under _Webhooks_: Click _Add Webhook_ and put the tool URL as the _Payload URL_. Select _Branch or tag creation_ for example if this is only for new tags or releases. Save it by clicking _Add Webhook_.
 
 Whenever GitHub fires the Webhook payload URL, the tool will take the event and start to look for a Build that references the GitHub repository URL from the event payload. When found, it will trigger a new BuildRun based on that Build and wait for it to complete. After it is completed successfully, it will nudge the Knative Service to pick up the new container image to create a new revision, which will roll out the new version.
