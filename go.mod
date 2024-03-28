@@ -3,7 +3,7 @@ module github.com/permhoot/rebuild
 go 1.22
 
 require (
-	github.com/shipwright-io/build v0.12.1-0.20240320125241-2a4b6ed197dd
+	github.com/shipwright-io/build v0.13.0-rc0
 	k8s.io/api v0.29.3
 	k8s.io/apimachinery v0.29.3
 	k8s.io/client-go v0.29.3
