@@ -2,14 +2,17 @@
 version: 2
 updates:
 - package-ecosystem: gomod
+  open-pull-requests-limit: 1
   directory: "/"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
   ignore:
   - dependency-name: k8s.io/*
+  - dependency-name: knative.dev/*
+  allow:
+  - dependency-type: "all"
 - package-ecosystem: github-actions
+  open-pull-requests-limit: 1
   directory: /
   schedule:
     interval: weekly
-  open-pull-requests-limit: 10
